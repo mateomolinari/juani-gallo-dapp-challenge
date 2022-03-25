@@ -112,6 +112,7 @@ function MainUI() {
                             cDAI Balance: {userBalance ? parseFloat(ethers.utils.formatUnits(userBalance, 8)).toFixed(2) : '0'}
                         </Text>
                         <Input 
+                        color="white"
                         type="number" 
                         w="50%" 
                         onChange={handleInputChange} 
@@ -124,8 +125,7 @@ function MainUI() {
                                 w="200%" 
                                 border="1px solid transparent"
                                 _hover={{
-                                    borderColor: "white",
-                                    color: "white",
+                                    borderColor: "black",
                                 }}
                                 onClick={() => mintcDAI()} 
                                 isDisabled={tokenAmount === '' || parseInt(tokenAmount) === 0}>
