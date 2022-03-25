@@ -156,7 +156,7 @@ function MainUI() {
                     flexDirection="column"
                     justifyContent="center"
                     alignItems="center">
-                        <Spinner mb={5}/>
+                        <Spinner mb={5} color="white"/>
                         <Text fontSize="3xl" color="white"> Mining transaction </Text>
                     </Flex>
                 }
