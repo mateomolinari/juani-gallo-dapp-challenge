@@ -64,7 +64,7 @@ function MainUI() {
             justifyContent="center"
             h="90vh"
             bg="gray.700">
-                <Text fontSize="4xl">Change network to Kovan</Text>
+                <Text fontSize="4xl" color="white">Change network to Kovan</Text>
             </Flex>
         )
     } else if (!account) {
@@ -84,7 +84,7 @@ function MainUI() {
                 flexDirection="column"
                 justifyContent="space-around"
                 alignItems="center">
-                    <Text fontSize="2xl">Please connect your wallet</Text>
+                    <Text fontSize="2xl" color="white">Please connect your wallet</Text>
                 </Flex>
             </Flex>
         )
@@ -107,8 +107,8 @@ function MainUI() {
                     flexDirection="column"
                     justifyContent="space-around"
                     alignItems="center">
-                        <Text fontSize="3xl"> Supply DAI to Compound </Text>
-                        <Text fontSize="xl">
+                        <Text fontSize="3xl" color="white"> Supply DAI to Compound </Text>
+                        <Text fontSize="xl" color="white">
                             cDAI Balance: {userBalance ? parseFloat(ethers.utils.formatUnits(userBalance, 8)).toFixed(2) : '0'}
                         </Text>
                         <Input 
@@ -157,7 +157,7 @@ function MainUI() {
                     justifyContent="center"
                     alignItems="center">
                         <Spinner mb={5}/>
-                        <Text fontSize="3xl"> Mining transaction </Text>
+                        <Text fontSize="3xl" color="white"> Mining transaction </Text>
                     </Flex>
                 }
             </Flex>

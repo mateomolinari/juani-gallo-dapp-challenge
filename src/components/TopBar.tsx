@@ -63,7 +63,7 @@ function TopBar() {
                     <Button
                       onClick={handleConnectWallet}
                       bg="gray.600"
-                      color="text"
+                      color="white"
                       fontSize="lg"
                       fontWeight="medium"
                       borderRadius="xl"
@@ -71,7 +71,7 @@ function TopBar() {
                       shadow="xl"
                       _hover={{
                         borderColor: "white",
-                        color: "text",
+                        color: "white",
                       }}
                       _active={{
                         borderColor: "white",
