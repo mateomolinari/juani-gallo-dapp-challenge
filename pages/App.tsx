@@ -1,6 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import TopBar from './components/TopBar';
-import MainUI from './components/MainUI';
+import TopBar from '../components/TopBar';
+import MainUI from '../components/MainUI';
 import { DAppProvider } from '@usedapp/core'; 
 
 function App() {

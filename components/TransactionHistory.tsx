@@ -20,6 +20,7 @@ type Props = {
     account?: string
   };
 
+
 function TransactionHistory({ account }: Props) {
 
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -32,7 +33,6 @@ function TransactionHistory({ account }: Props) {
             if (account) {
                 let history = await provider.getHistory(account);
                 setTransactionHistory(history)
-                console.log(history)    
             }
         }
         getTransactionHistory()
